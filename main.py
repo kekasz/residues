@@ -6,21 +6,21 @@ from find_invalid import f_invalid
 
 def main():
     parser = argparse.ArgumentParser()
-    mol_protonation = parser.add_argument(
+    parser.add_argument(
         '--protonate',
         action='store',
         nargs='?',
         type=str,
         const=str(os.getcwd())
     )
-    ppdb_selection = parser.add_argument(
+    parser.add_argument(
         '--select',
         action='store',
         nargs='?',
         type=str,
         const=''
     )
-    find_invalid = parser.add_argument(
+    parser.add_argument(
         '--find',
         action='store',
         nargs='?',
