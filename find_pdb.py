@@ -9,7 +9,6 @@ from os.path import isfile, isdir, join
 
 
 def f_pdb(path) -> list:
-    """Puts all .pdb files in a directory in a function."""
     if isfile(path):
         if path[-4:] == '.pdb':
             return [path]
@@ -29,7 +28,6 @@ def f_pdb(path) -> list:
 
 
 def f_ppdb(path) -> list:
-    """Puts all .pdb files in a directory in a function."""
     if isfile(path):
         if path[-14:] == 'protonated.pdb':
             return [path]
